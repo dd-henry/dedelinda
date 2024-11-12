@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dede linda</title>
 </head>
 <body>
     <h1 id="titulo"></h1>  
     <script>
         const h1 = document.getElementById("titulo")
         let name = prompt("insira seu nome")
-        if (name != "Andressa" || name != "andressa" || name != "ANDRESSA") {
+        console.log(name)
+        console.log(typeof(name))
+        if (name.toLowerCase() !== "andressa") {
             alert("Não funciona, não amo mais ninguém")
         }
-        for (let index = 0; index < 1000; index++) {
-            h1.append("Andressa eu te amooooo ❤️ ")
-            
+        if (name.toLowerCase() == "andressa") {
+            alert("Andressa eu te amooooooooooooooooooooooooooooooooooo")
         }
+        
+        function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}
+
+        async function a () {
+            for (let index = 0; index < 10000; index++) {
+                h1.append("Andressa eu te amooooo ❤️ ");
+                await delay(100
+                );
+            }
+        }
+        a()
 
         
    </script>
