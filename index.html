@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dede linda</title>
+    <title>Document</title>
 </head>
 <body>
     <h1 id="titulo"></h1>  
     <script>
         const h1 = document.getElementById("titulo")
-        let name = prompt("insira seu nome")
+        while (true) {
+            let name = prompt("insira seu nome")
+            
+            if (name.toLowerCase() !== "andressa") {
+                alert("Não funciona, não amo mais ninguém")
+            }
+
+            if (name.toLowerCase() == "andressa") {
+                alert("Andressa eu te amooooooooooooooooooooooooooooooooooo")
+                break
+            }
+        }
         console.log(name)
         console.log(typeof(name))
-        if (name.toLowerCase() !== "andressa") {
-            alert("Não funciona, não amo mais ninguém")
-        }
-        if (name.toLowerCase() == "andressa") {
-            alert("Andressa eu te amooooooooooooooooooooooooooooooooooo")
-        }
         
         function delay(milliseconds){
     return new Promise(resolve => {
